@@ -18,4 +18,4 @@ player.getVideoTitle().then(function (title) {
   console.log('title:', title);
 });
 
-player.setCurrentTime(localStorage.getItem('videoplayer-current-time'));
+player.setCurrentTime(localStorage.getItem('videoplayer-current-time') ?? 0);
